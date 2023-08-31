@@ -1,7 +1,7 @@
 package com.example.onlinebookstore.service.impl;
 
-import com.example.onlinebookstore.dao.BookDto;
-import com.example.onlinebookstore.dao.CreateBookRequestDto;
+import com.example.onlinebookstore.dto.BookDto;
+import com.example.onlinebookstore.dto.CreateBookRequestDto;
 import com.example.onlinebookstore.exceptions.EntityNotFoundException;
 import com.example.onlinebookstore.mapper.BookMapper;
 import com.example.onlinebookstore.model.Book;

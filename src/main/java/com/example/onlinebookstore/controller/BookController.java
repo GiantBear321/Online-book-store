@@ -1,7 +1,7 @@
 package com.example.onlinebookstore.controller;
 
-import com.example.onlinebookstore.dao.BookDto;
-import com.example.onlinebookstore.dao.CreateBookRequestDto;
+import com.example.onlinebookstore.dto.BookDto;
+import com.example.onlinebookstore.dto.CreateBookRequestDto;
 import com.example.onlinebookstore.service.BookService;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
