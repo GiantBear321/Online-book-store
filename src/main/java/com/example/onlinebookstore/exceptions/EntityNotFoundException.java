@@ -1,0 +1,7 @@
+package com.example.onlinebookstore.exceptions;
+
+public class EntityNotFoundException extends RuntimeException {
+    public EntityNotFoundException(String message) {
+        super(message);
+    }
+}
