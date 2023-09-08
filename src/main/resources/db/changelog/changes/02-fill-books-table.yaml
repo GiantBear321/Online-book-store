@@ -1,0 +1,110 @@
+databaseChangeLog:
+  - changeSet:
+      id: fill-books-table
+      author: artem
+      changes:
+        - insert:
+            tableName: books
+            columns:
+              - column:
+                  name: title
+                  value: "Sample Book 1"
+              - column:
+                  name: author
+                  value: 'Author A'
+              - column:
+                  name: isbn
+                  value: '9781234567897'
+              - column:
+                  name: price
+                  value: 19.99
+              - column:
+                  name: description
+                  value: 'This is a sample book description.'
+              - column:
+                  name: cover_image
+                  value: 'http://example.com/cover1.jpg'
+        - insert:
+            tableName: books
+            columns:
+              - column:
+                  name: title
+                  value: "Sample Book 2"
+              - column:
+                  name: author
+                  value: 'Author B'
+              - column:
+                  name: isbn
+                  value: '11231244567897'
+              - column:
+                  name: price
+                  value: 24.99
+              - column:
+                  name: description
+                  value: 'This is a sample book 2 description.'
+              - column:
+                  name: cover_image
+                  value: 'http://example.com/cover2.jpg'
+        - insert:
+            tableName: books
+            columns:
+              - column:
+                  name: title
+                  value: "Sample Book 3"
+              - column:
+                  name: author
+                  value: 'Author C'
+              - column:
+                  name: isbn
+                  value: '44444444567897'
+              - column:
+                  name: price
+                  value: 29.99
+              - column:
+                  name: description
+                  value: 'This is a sample book 3 description.'
+              - column:
+                  name: cover_image
+                  value: 'http://example.com/cover3.jpg'
+        - insert:
+            tableName: books
+            columns:
+              - column:
+                  name: title
+                  value: "Lord of the Rings"
+              - column:
+                  name: author
+                  value: 'Tolkien'
+              - column:
+                  name: isbn
+                  value: '412321344567897'
+              - column:
+                  name: price
+                  value: 49.99
+              - column:
+                  name: description
+                  value: 'This is one of the best books'
+              - column:
+                  name: cover_image
+                  value: 'http://example.com/coverL.jpg'
+        - insert:
+            tableName: books
+            columns:
+              - column:
+                  name: title
+                  value: "Witcher"
+              - column:
+                  name: author
+                  value: 'Sapkovskiy'
+              - column:
+                  name: isbn
+                  value: '412321123344567897'
+              - column:
+                  name: price
+                  value: 59.99
+              - column:
+                  name: description
+                  value: 'This is one of the best books'
+              - column:
+                  name: cover_image
+                  value: 'http://example.com/coverW.jpg'
