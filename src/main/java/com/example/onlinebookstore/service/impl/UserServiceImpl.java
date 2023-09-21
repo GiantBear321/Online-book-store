@@ -9,7 +9,6 @@ import com.example.onlinebookstore.model.User;
 import com.example.onlinebookstore.repository.role.RoleRepository;
 import com.example.onlinebookstore.repository.user.UserRepository;
 import com.example.onlinebookstore.service.UserService;
-import java.util.HashSet;
 import java.util.Set;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -38,9 +37,7 @@ public class UserServiceImpl implements UserService {
 
         Role userRole = roleRepository.findRoleByName(Role.RoleName.USER)
                 .orElseThrow(() -> new RegistrationException("Can't find role by name"));
-        Set<Role> defaultUserRoleSet = new HashSet<>();
-        defaultUserRoleSet.add(userRole);
-        user.setRoles(defaultUserRoleSet);
+        user.setRoles(Set.of(userRole));
         return userMapper.toUserResponseDto(userRepository.save(user));
     }
 }
