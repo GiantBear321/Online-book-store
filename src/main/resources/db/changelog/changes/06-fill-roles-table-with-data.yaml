@@ -1,0 +1,13 @@
+databaseChangeLog:
+  - changeSet:
+      id: fill-roles-table-by-data
+      author: onlinebookstore
+      changes:
+        - insert:
+            tableName: roles
+            columns:
+              - column: {name: "name", value: "ADMIN"}
+        - insert:
+            tableName: roles
+            columns:
+              - column: {name: "name", value: "USER"}

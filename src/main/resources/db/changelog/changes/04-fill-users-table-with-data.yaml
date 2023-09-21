@@ -1,0 +1,29 @@
+databaseChangeLog:
+  - changeSet:
+      id: fill-users-table-by-data
+      author: artem
+      changes:
+        - insert:
+            tableName: users
+            columns:
+              - column: { name: "email", value: "first111@gmail.com" }
+              - column: { name: "password", value: "$2a$12$zmLqQy8d2XyJMcY81P.oQ.b1vCsL8EJAiLvlODUICtQKBh7VJQ6U6" } # "111"}
+              - column: { name: "first_name", value: "First" }
+              - column: { name: "last_name", value: "Firstov" }
+              - column: { name: "shipping_address", value: "Firstovo, 34/5" }
+        - insert:
+            tableName: users
+            columns:
+              - column: { name: "email", value: "second222@gmail.com" }
+              - column: { name: "password", value: "$2a$12$P/6fNMUiE9C8rPFymunCS.XUGxJMBcbbVxsxIDb8.vQp3e9fkueQC" } # "222"}
+              - column: { name: "first_name", value: "Second" }
+              - column: { name: "last_name", value: "Secondov" }
+              - column: { name: "shipping_address", value: "Secondovo, 45/6" }
+        - insert:
+            tableName: users
+            columns:
+              - column: { name: "email", value: "third333@gmail.com" }
+              - column: { name: "password", value: "$2a$12$cyV11p9/THIMjL7qiMMGMOZbmhXu9XBEQKoS/s7oIhu7/7qGBb6ZC" } # "333"}
+              - column: { name: "first_name", value: "Third" }
+              - column: { name: "last_name", value: "Thirdov" }
+              - column: { name: "shipping_address", value: "Thirdovo, 56/7" }
