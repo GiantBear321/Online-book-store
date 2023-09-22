@@ -1,0 +1,45 @@
+databaseChangeLog:
+  - changeSet:
+      id: fill-books_categories-table-by-data
+      author: artem
+      changes:
+        - insert:
+            tableName: books_categories
+            columns:
+              - column: {name: "category_id", value: "1"}
+              - column: {name: "book_id", value: "4"}
+        - insert:
+            tableName: books_categories
+            columns:
+              - column: {name: "category_id", value: "1"}
+              - column: {name: "book_id", value: "5"}
+        - insert:
+            tableName: books_categories
+            columns:
+              - column: {name: "category_id", value: "2"}
+              - column: {name: "book_id", value: "7"}
+        - insert:
+            tableName: books_categories
+            columns:
+              - column: {name: "category_id", value: "2"}
+              - column: {name: "book_id", value: "8"}
+        - insert:
+            tableName: books_categories
+            columns:
+              - column: { name: "category_id", value: "3" }
+              - column: { name: "book_id", value: "1" }
+        - insert:
+            tableName: books_categories
+            columns:
+              - column: { name: "category_id", value: "3" }
+              - column: { name: "book_id", value: "2" }
+        - insert:
+            tableName: books_categories
+            columns:
+              - column: { name: "category_id", value: "3" }
+              - column: { name: "book_id", value: "3" }
+        - insert:
+            tableName: books_categories
+            columns:
+              - column: { name: "category_id", value: "3" }
+              - column: { name: "book_id", value: "6" }

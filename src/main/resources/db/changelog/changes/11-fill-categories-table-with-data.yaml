@@ -1,0 +1,20 @@
+databaseChangeLog:
+  - changeSet:
+      author: artem
+      id: fill-categories-table
+      changes:
+        - insert:
+            tableName: categories
+            columns:
+              - column: {name: "name", value: "Fantasy"}
+              - column: {name: "description", value: "Fantasy books"}
+        - insert:
+            tableName: categories
+            columns:
+              - column: {name: "name", value: "Classic" }
+              - column: {name: "description", value: "Classic books"}
+        - insert:
+            tableName: categories
+            columns:
+              - column: {name: "name", value: "Samples" }
+              - column: {name: "description", value: "Samples books"}
