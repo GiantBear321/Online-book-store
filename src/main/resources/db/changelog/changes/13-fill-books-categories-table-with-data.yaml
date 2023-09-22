@@ -16,16 +16,6 @@ databaseChangeLog:
         - insert:
             tableName: books_categories
             columns:
-              - column: {name: "category_id", value: "2"}
-              - column: {name: "book_id", value: "7"}
-        - insert:
-            tableName: books_categories
-            columns:
-              - column: {name: "category_id", value: "2"}
-              - column: {name: "book_id", value: "8"}
-        - insert:
-            tableName: books_categories
-            columns:
               - column: { name: "category_id", value: "3" }
               - column: { name: "book_id", value: "1" }
         - insert:
@@ -38,8 +28,3 @@ databaseChangeLog:
             columns:
               - column: { name: "category_id", value: "3" }
               - column: { name: "book_id", value: "3" }
-        - insert:
-            tableName: books_categories
-            columns:
-              - column: { name: "category_id", value: "3" }
-              - column: { name: "book_id", value: "6" }
