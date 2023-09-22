@@ -1,0 +1,10 @@
+databaseChangeLog:
+  - changeSet:
+      id: give-role-User-to-Admin
+      author: artem
+      changes:
+        - insert:
+            tableName: users_roles
+            columns:
+              - column: {name: "user_id", value: "1"}
+              - column: {name: "role_id", value: "2"}

@@ -57,4 +57,17 @@ public class CustomGlobalExceptionHandler extends ResponseEntityExceptionHandler
         return handleExceptionInternal(ex, body, new HttpHeaders(),
                 HttpStatus.NOT_FOUND, request);
     }
+
+    @ExceptionHandler(value = RegistrationException.class)
+    protected ResponseEntity<Object> handleRegistrationException(
+            RegistrationException ex,
+            WebRequest request
+    ) {
+        Map<String, Object> body = new LinkedHashMap<>();
+        body.put("timestamp", LocalDateTime.now());
+        body.put("status", HttpStatus.NOT_FOUND);
+        body.put("error", "Wrong Data");
+        return handleExceptionInternal(ex, body, new HttpHeaders(),
+                HttpStatus.NOT_FOUND, request);
+    }
 }

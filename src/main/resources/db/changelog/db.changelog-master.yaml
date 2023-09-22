@@ -1,5 +1,19 @@
 databaseChangeLog:
   - include:
-      file : db/changelog/changes/01-create-books-table.yaml
+      file: db/changelog/changes/01-create-books-table.yaml
   - include:
-      file : db/changelog/changes/02-fill-books-table.yaml
+      file: db/changelog/changes/02-fill-books-table.yaml
+  - include:
+      file: db/changelog/changes/03-create-users-table.yaml
+  - include:
+      file: db/changelog/changes/04-fill-users-table-with-data.yaml
+  - include:
+      file: db/changelog/changes/05-create-roles-table.yaml
+  - include:
+      file: db/changelog/changes/06-fill-roles-table-with-data.yaml
+  - include:
+      file: db/changelog/changes/07-create-users-roles-table.yaml
+  - include:
+      file: db/changelog/changes/08-fill-users-roles-table-with-data.yaml
+  - include:
+      file: db/changelog/changes/09-give-role-User-to-Admin.yaml
