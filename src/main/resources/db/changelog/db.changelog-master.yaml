@@ -17,3 +17,11 @@ databaseChangeLog:
       file: db/changelog/changes/08-fill-users-roles-table-with-data.yaml
   - include:
       file: db/changelog/changes/09-give-role-User-to-Admin.yaml
+  - include:
+      file: db/changelog/changes/10-create-categories-table.yaml
+  - include:
+      file: db/changelog/changes/11-fill-categories-table-with-data.yaml
+  - include:
+      file: db/changelog/changes/12-create-books-categories-table.yaml
+  - include:
+      file: db/changelog/changes/13-fill-books-categories-table-with-data.yaml
