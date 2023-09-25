@@ -1,7 +1,7 @@
 package com.example.onlinebookstore.repository.book.spec;
 
 import com.example.onlinebookstore.model.Book;
-import com.example.onlinebookstore.repository.SpecificationProvider;
+import com.example.onlinebookstore.repository.specification.SpecificationProvider;
 import jakarta.persistence.criteria.Predicate;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Component;

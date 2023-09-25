@@ -1,4 +1,4 @@
-package com.example.onlinebookstore.repository.category;
+package com.example.onlinebookstore.repository;
 
 import com.example.onlinebookstore.model.Category;
 import java.util.Set;

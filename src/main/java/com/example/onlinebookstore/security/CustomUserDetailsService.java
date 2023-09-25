@@ -1,6 +1,6 @@
 package com.example.onlinebookstore.security;
 
-import com.example.onlinebookstore.repository.user.UserRepository;
+import com.example.onlinebookstore.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
