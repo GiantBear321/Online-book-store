@@ -5,7 +5,7 @@ import com.example.onlinebookstore.dto.category.CreateCategoryRequestDto;
 import com.example.onlinebookstore.exceptions.EntityNotFoundException;
 import com.example.onlinebookstore.mapper.CategoryMapper;
 import com.example.onlinebookstore.model.Category;
-import com.example.onlinebookstore.repository.category.CategoryRepository;
+import com.example.onlinebookstore.repository.CategoryRepository;
 import com.example.onlinebookstore.service.CategoryService;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
