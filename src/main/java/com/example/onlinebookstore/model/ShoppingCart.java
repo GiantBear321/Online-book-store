@@ -1,5 +1,6 @@
 package com.example.onlinebookstore.model;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -27,7 +28,7 @@ public class ShoppingCart {
     @JoinColumn(name = "user_id")
     private User user;
 
-    @OneToMany(mappedBy = "shoppingCart")
+    @OneToMany(mappedBy = "shoppingCart", cascade = CascadeType.ALL)
     private Set<CartItem> cartItems;
 
     @Column(name = "is_deleted", nullable = false)
