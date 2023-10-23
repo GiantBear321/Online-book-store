@@ -16,6 +16,7 @@ import com.example.onlinebookstore.repository.OrderItemRepository;
 import com.example.onlinebookstore.repository.OrderRepository;
 import com.example.onlinebookstore.repository.ShoppingCartRepository;
 import com.example.onlinebookstore.service.OrderService;
+import jakarta.transaction.Transactional;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.List;
@@ -75,6 +76,7 @@ public class OrderServiceImpl implements OrderService {
     }
 
     @Override
+    @Transactional
     public void updateOrderStatus(Long orderId,
                                   OrderStatusUpdateRequestDto orderStatusUpdateRequestDto) {
         orderRepository.updateStatusByOrderId(orderId,
@@ -82,6 +84,7 @@ public class OrderServiceImpl implements OrderService {
     }
 
     @Override
+    @Transactional
     public void updateShippingAddress(Long userId,
                                                   Long orderId,
                                                   OrderAddressUpdateDto orderAddressUpdateDto) {
