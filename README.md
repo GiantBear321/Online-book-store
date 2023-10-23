@@ -21,14 +21,12 @@ Online Book Store API offers comprehensive book and category management, order p
 ---
 
 ### Current project functionality
-
 The application has USER or ADMIN roles. The USER role is assigned automatically to each new user. Users can search for and select books either directly or by categories, then add them to their shopping cart and place orders. Meanwhile, administrators have the ability to update books and categories, delete them, and perform management tasks. Additionally, they are responsible for order statuses.
 
 ### Servers
 http://localhost:8080/api - Generated server url
 
 ### Structure
-
 My program follows a well-structured architecture pattern where the application logic is organized into distinct layers: controllers, services, and repositories. This architecture, commonly referred to as the "MVC" (Model-View-Controller) or "Service-Repository" pattern, promotes separation of concerns and maintainability. It allows for a clear distinction between the presentation layer (controllers), business logic (services), and data access layer (repositories), making the codebase more modular and easier to maintain.
 
 ### Databases
@@ -36,17 +34,14 @@ Here you can see the relationships between entities in my project.
 ![Online_book_store_ER.png](Online_book_store_ER.png)
 
 ### Authentication
-
 The API uses JWT (JSON Web Tokens) for authentication. To access protected endpoints, include the generated JWT token in the `Authorization` header of your requests.
 
 ### Postman collection
-
 You can use this collection of requests to test the application. 
 
 https://www.postman.com/payload-architect-47195822/workspace/public/collection/29452702-88b36397-7d49-453b-aa33-d753888f5618?action=share&creator=29452702
 
 ### Endpoints
-
 Authentication management - Endpoints for managing authentication
 - POST: /auth/register Register
 - POST: /auth/login Login
@@ -89,5 +84,4 @@ Book management - Endpoints for managing books
 I encountered some challenges during the development process, particularly with Lazy initialization due to Lombok annotations and setting up relationships between entities in the project. Debugging and extensive online research (Googling) played a crucial role in overcoming these obstacles. The determination to create a robust API and resolve these issues helped me successfully complete the project.
 
 ## Conclusion
-
 The Online Book Store API provides a comprehensive solution for establishing and maintaining an online bookstore. It offers an extensive array of features suitable for users and administrators alike, making it an ideal choice for any book-centric enterprise. Whether you're in the business of book sales or simply on the hunt for your next literary adventure, this API has you well-supported.
